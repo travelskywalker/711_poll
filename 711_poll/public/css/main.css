@@ -1,0 +1,141 @@
+/*large screen*/
+@media only screen and (min-width: 993px){
+	.lfh{
+		height: 100%;
+	}
+	.lhw {
+	    width: 50% !important;
+	    margin: 0 auto;
+	}
+}
+/*medium to small screen*/
+@media only screen and (max-width: 992px) {
+	.shh {
+	    height: 50%;
+	}
+	.nomination-page-2.shh .valign-wrapper {
+	    display: block;
+	}
+}
+
+/*medium screen only*/
+@media only screen and (max-width: 992px) {
+	.responsive-img{
+		max-width: 60% !important;
+	}
+}
+/*small screen*/
+@media only screen and (max-width: 600px) {
+	.responsive-img{
+		max-width: 100% !important;
+	}
+}
+
+/*special small screen // for the logo*/
+@media only screen and (max-width: 545) {
+	.responsive-img{
+		max-width: 90% !important;
+	}
+}
+
+/*normal css*/
+
+.main{
+	background: #17B0C0;
+}
+body{
+	min-width: 320px;
+}
+
+h4,h5,h6{
+	font-family: bebas;
+	color: #ffffff;
+}
+p{
+	font-family: gotham-medium;
+    font-size: 10px;
+    color: #ffffff;
+}
+a{
+	font-family: gotham-light;
+	color: #D8D20E;
+	font-size: 10px;
+}
+.band-container {
+    margin: 10px 0px;
+}
+.band-container h4, .band-container h6 {
+    margin: -7px;
+}
+.full-height {
+    height: 100vh;
+}
+.row.full-height{
+	margin-bottom: 0px;
+}
+.full-height-inner{
+	height: 100%;
+}
+.full-width{
+	width: 100%;
+}
+.half-width{
+	width: 50%;
+}
+.padding{
+	padding: 16px;
+}
+.center-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.nomination-page-1{
+	background: url(/images/kv2.png);
+    background-size: cover;
+    background-position: center
+}
+.curtain-bg{
+	background: url(/images/kv2.png);
+    background-size: cover;
+    background-position: center
+}
+.nomination-page-1 p{
+	margin-top: 0;
+}
+.nomination-page-2{
+	background: url(/images/red-bg-tile.jpg);
+}
+input{
+	height: 36px;
+    border-radius: 7px;
+    padding: 2px 10px;
+    border: none;
+    background: #ffffff;
+    width: 100%;
+}
+input:focus {
+    outline: none;
+}
+.default-button, .default-button:hover {
+    background: #D8D20E !important;
+    border-radius: 30px;
+    box-shadow: none;
+}
+.suggestion {
+	background: #fff;
+    margin-top: 32px;
+    display: none;
+    position: absolute;
+    width: calc(100% - 1.5rem);
+    z-index: 1;
+    max-height: 21vh;
+    overflow: scroll;
+}
+.school-list {
+    padding: 5px 10px;
+    border-top: 1px solid #B3B3B3;
+    cursor: pointer;
+}
+.soc-media-container img{
+      width: 40px;
+}
