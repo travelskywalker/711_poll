@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="row full-height">
 	<div class="nomination-page-1 col s12 l6 center-align shh lfh half-height no-padding valign-wrapper">
-		<div class="half-width full-height-inner center-align center-container valign-wrapper">
+		<div class="lfw shw full-height-inner center-align center-container valign-wrapper">
 			<div class="full-width">
 				<img class="responsive-img" src="/images/BTOC_logo_FINAL.png">
 				<p>BITE AND SLURP YOUR WAY<br/>TO A FREE CONCERT</p>
@@ -14,13 +15,13 @@
 					<h6>& more</h6>
 				</div>
 
-				<a href="/">Learn more</a>
+				<a onclick="op()" >Learn more</a>
 			</div>
 		</div>
 	</div>
 	<div class="nomination-page-2 col s12 l6 center-align shh lfh no-padding">
 		<div class="full-height-inner center-align center-container valign-wrapper">
-			<form id="nomination_form" method="POST" action="{{ route('submit-nomination') }}"> @csrf
+			<form class="col s12 l8 offset-l2" id="nomination_form" method="POST" action="{{ route('submit-nomination') }}"> @csrf
 				<div class="svh">
 					<div class="full-width left-align padding">
 						<div class="col s12">

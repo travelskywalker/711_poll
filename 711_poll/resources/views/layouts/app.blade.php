@@ -29,6 +29,15 @@
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 </head>
 <body>
+<div id="learnmore" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+        </div>
     <div id="app">
         <main class="main">
             @yield('content')

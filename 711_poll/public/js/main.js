@@ -52,7 +52,10 @@ $(document).ready(function(){
       });
     }
   });
+
+  
 });
+
 
 function isNameRecorded(){
   sendAPI('GET','/isNameRecorded/'+$('#name').val()).then(function(response){

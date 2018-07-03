@@ -9,9 +9,9 @@
 			<p>Visit our social media accounts to stay posted<br/>on further announcements!</p>
 
 			<div class="soc-media-container">
-				<a href="/"><img src="/images/facebook.png"></a>
-				<a href="/"><img src="/images/twitter.png"></a>
-				<a href="/"><img src="/images/instagram.png"></a>
+				<a href="http://www.facebook.com/711philippines"><img src="/images/facebook.png"></a>
+				<a href="http://www.twitter.com/711philippines"><img src="/images/twitter.png"></a>
+				<a href="http://www.instagram.com/711ph"><img src="/images/instagram.png"></a>
 			</div>
 		</div>
 	</div>
