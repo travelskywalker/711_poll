@@ -158,4 +158,15 @@ class NominationController extends Controller
 
         return response()->json(['isNameRecorded'=>$isNameRecorded]);
     }
+
+    public function nominationResult(){
+        $result = DB::table('nominations')->take(5)
+            ->selectRaw('school_name, COUNT(*) as vote_count')
+            ->orderby('vote_count','desc')
+            ->groupBy('nominations.school_name')
+            ->get();
+
+        // return view('result')->with(['result'=>$result]);
+        return response()->json(['data'=>$result]);
+    }
 }
