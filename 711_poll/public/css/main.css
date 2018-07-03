@@ -10,6 +10,10 @@
 	lfw{
 		width: 100%;
 	}
+	div#learnmore {
+		width: 40%;
+		height: 50%;
+	}
 }
 /*medium to small screen*/
 @media only screen and (max-width: 992px) {
@@ -138,8 +142,31 @@ input{
     font-size: 10px;
     font-style: italic;
 }
-input:focus {
+input:focus,div#learnmore:focus {
     outline: none;
+}
+div#learnmore {
+	border-radius: 10px;
+	transform: translateY(-50%) !important;
+}
+#learnmore .modal-content {
+    padding-top: 0px;
+}
+#learnmore.modal-fixed-footer .modal-footer {
+    top: 0;
+	position: initial;
+	height: 40px;
+}
+.modal .modal-close {
+}
+.modal p {
+    color: #000000;
+    font-family: gotham-medium;
+    font-size: 10px;
+}
+.modal h5{
+	color:#eb3e29;
+	margin-top: 2px;
 }
 .default-button, .default-button:hover {
     background: #D8D20E !important;

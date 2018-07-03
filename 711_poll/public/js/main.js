@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $('.modal').modal({
+    preventScrolling: true,
+    dismissible: false,
+    startingTop: '50%',
+    endingTop: '50%',
+  });
+
   $('#school').keyup(function(){
 
     if($(this).val().length >= 2){

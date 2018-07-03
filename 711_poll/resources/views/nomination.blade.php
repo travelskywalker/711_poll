@@ -15,7 +15,7 @@
 					<h6>& more</h6>
 				</div>
 
-				<a onclick="op()" >Learn more</a>
+				<a class="modal-trigger" href="#learnmore">Learn more</a>
 			</div>
 		</div>
 	</div>
