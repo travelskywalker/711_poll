@@ -26,7 +26,7 @@ $(document).ready(function(){
         if(unique(arr).length > 0) $('.suggestion').fadeIn().html('');
 
         $.each(unique(arr), function(key,value){
-          $('.suggestion').append('<div class="school-list">'+value+'</div>');
+          $('.suggestion').append('<div class="school-list">'+ucwords(value)+'</div>');
         });
 
         $('.school-list').click(function(){
@@ -115,5 +115,18 @@ function sendAPI(method,url,data){
           }
       })
   );
+}
+
+function ucwords(string) {
+	var str = string.toLowerCase();
+	var words = str.split(' ');
+	str = '';
+	for (var i = 0; i < words.length; i++) {
+		var word = words[i];
+		word = word.charAt(0).toUpperCase() + word.slice(1);
+		if (i > 0) { str = str + ' '; }
+		str = str + word;
+	}
+	return str;
 }
 
