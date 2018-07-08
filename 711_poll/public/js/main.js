@@ -24,6 +24,7 @@ $(document).ready(function(){
 
         // append each school to suggestion content
         if(unique(arr).length > 0) $('.suggestion').fadeIn().html('');
+        else $('.suggestion').fadeOut();
 
         $.each(unique(arr), function(key,value){
           $('.suggestion').append('<div class="school-list">'+ucwords(value)+'</div>');
@@ -37,8 +38,6 @@ $(document).ready(function(){
       .catch(function(error){
 
       });
-
-      // $('.suggestion').html('"'+getSchoolSuggestion($(this).val())+'"').fadeIn();
     }else{
       $('.suggestion').fadeOut().html('');
     }

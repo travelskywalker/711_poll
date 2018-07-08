@@ -251,3 +251,7 @@ div#learnmore {
 i.left {
     margin-right: 5px;
 }
+ol{
+	font-size: 10px;
+    font-family: gotham-medium;
+}
