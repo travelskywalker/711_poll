@@ -24,9 +24,10 @@ $(document).ready(function(){
 
         // append each school to suggestion content
         if(unique(arr).length > 0) $('.suggestion').fadeIn().html('');
+        else $('.suggestion').fadeOut();
 
         $.each(unique(arr), function(key,value){
-          $('.suggestion').append('<div class="school-list">'+value+'</div>');
+          $('.suggestion').append('<div class="school-list">'+ucwords(value)+'</div>');
         });
 
         $('.school-list').click(function(){
@@ -37,8 +38,6 @@ $(document).ready(function(){
       .catch(function(error){
 
       });
-
-      // $('.suggestion').html('"'+getSchoolSuggestion($(this).val())+'"').fadeIn();
     }else{
       $('.suggestion').fadeOut().html('');
     }
@@ -115,5 +114,18 @@ function sendAPI(method,url,data){
           }
       })
   );
+}
+
+function ucwords(string) {
+	var str = string.toLowerCase();
+	var words = str.split(' ');
+	str = '';
+	for (var i = 0; i < words.length; i++) {
+		var word = words[i];
+		word = word.charAt(0).toUpperCase() + word.slice(1);
+		if (i > 0) { str = str + ' '; }
+		str = str + word;
+	}
+	return str;
 }
 

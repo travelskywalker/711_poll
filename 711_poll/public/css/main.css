@@ -14,6 +14,32 @@
 		width: 40%;
 		height: 50%;
 	}
+	.logo{ 
+		width: 400px;
+		margin-top: -11vh;
+	}
+	.nomination-page-1, {
+		background-size: 300% 125% !important;
+		background-repeat: no-repeat !important;
+		background-position: top !important;
+	}
+	.curtain-bg {
+		background-size: 190% 171% !important;
+		background-repeat: no-repeat !important;
+		background-position: top !important;
+	}
+	h5 {
+		font-size: 2.28rem !important;
+		line-height: 110% !important;
+		margin: 1.52rem 0 .912rem 0 !important;
+	}
+	.svh{
+		width: 21rem;
+	}	
+	.row .col.offset-l2 {
+		margin: 0 auto !important;
+		width: 21rem !important;
+	}
 }
 /*medium to small screen*/
 @media only screen and (max-width: 992px) {
@@ -30,25 +56,33 @@
 
 /*medium screen only*/
 @media only screen and (max-width: 992px) {
-	.responsive-img{
-		max-width: 60% !important;
+	.logo{ 
+		width: 80%;
 	}
 }
 /*small screen*/
 @media only screen and (max-width: 600px) {
-	.responsive-img{
-		max-width: 100% !important;
-	}
 	.shw {
 		width: 60%;
+	}
+	.logo{
+		width: 100%;
+	}
+	.band-container h4{
+		font-size: 1.5rem;
+		line-height: 1.9rem;
+	}
+	h6{
+		margin-top: 3px !important;
+    	margin-bottom: -11px !important;
+	}
+	h5.nominate-title {
+		font-size: 2rem;
 	}
 }
 
 /*special small screen // for the logo*/
 @media only screen and (max-width: 545px) {
-	.responsive-img{
-		max-width: 90% !important;
-	}
 }
 
 /* iphone 4 */
@@ -59,6 +93,13 @@
 	.band-container h4, .band-container h6 {
 		font-size: 1.5rem;
 		margin: -4px;
+	}
+	.logo{
+		width: 100%;
+	}
+	.curtain-bg .lhw {
+		margin-top: 50%;
+		transform: translateY(-33%);
 	}
 }
 
@@ -78,7 +119,12 @@ h4,h5,h6{
 p{
 	font-family: gotham-medium;
     font-size: 10px;
-    color: #ffffff;
+	color: #ffffff;
+	font-weight: bold;
+}
+p.success{
+    margin-top: -7px;
+	margin-bottom: 1rem;
 }
 a{
 	font-family: gotham-medium;
@@ -116,8 +162,9 @@ a{
 }
 .nomination-page-1{
 	background: url(/images/kv2.png);
-    background-size: cover;
-    background-position: center
+    background-size: 300% 160%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 .curtain-bg{
 	background: url(/images/kv2.png);
@@ -125,7 +172,7 @@ a{
     background-position: center
 }
 .nomination-page-1 p{
-	margin-top: 0;
+	margin-top: -24px;
 }
 .nomination-page-2{
 	background: url(/images/big-red-bg-tile.jpg);
@@ -144,6 +191,9 @@ input{
 }
 input:focus,div#learnmore:focus {
     outline: none;
+}
+.input-field {
+	margin-top: 0;
 }
 div#learnmore {
 	border-radius: 10px;
@@ -196,5 +246,12 @@ div#learnmore {
     color: #676767;
 }
 .soc-media-container img{
-      width: 40px;
+      width: 30px;
+}
+i.left {
+    margin-right: 5px;
+}
+ol{
+	font-size: 10px;
+    font-family: gotham-medium;
 }
